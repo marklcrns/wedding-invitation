@@ -1,5 +1,8 @@
 # Personal Portfolio Website
 
+[Landing Page](http://marklucernas.com/wedding-invitation/)
+[Sheets](https://docs.google.com/spreadsheets/d/1vfq21bzRIRjv3EkyKkSzUD6xKTb917pu1pnCO7yhLC8/edit#gid=0)
+
 ## Requirements
 
 - `node.js`
