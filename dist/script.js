@@ -1,0 +1,2 @@
+var marquee=document.querySelector("#marquee"),text="Please reply by\nJune 10th, 2022\nThank you!",textlen=text.length,i=-1,time=setInterval(myfunc,50);function myfunc(){i++,marquee.innerHTML+=text.charAt(i)}var form=document.getElementById("sheetdb-form");form.addEventListener("submit",(e=>{e.preventDefault(),fetch(form.action,{method:"POST",body:new FormData(document.getElementById("sheetdb-form"))}).then((e=>e.json())).then((e=>{alert("success")}))}));
+//# sourceMappingURL=script.js.map

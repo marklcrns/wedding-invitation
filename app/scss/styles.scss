@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
+$base-color: #f69314;
+$text-color: #777;
+$card-width: 360px;
+$card-height: 460px;
+
+/* START:  global styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Cormorant Garamond", serif;
+}
+
+img {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+
+.container {
+  width:  100%;
+  height:  100vh;
+  background:  linear-gradient(rgba(0, 0 ,0, 0.8), rgba(0, 0 ,0, 0.5)),
+    url(../../app/images/bg.jpg) center no-repeat;
+  background-size:  cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: $card-width;
+  height: $card-height;
+  position: relative;
+  perspective: 1000px;
+}
+
+.cover_left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(0, 0 ,0, 0.1), rgba(0, 0 ,0, 0.1)),
+    url(../../app/images/bg_card_cover.jpg) no-repeat;
+  background-size:  cover;
+  background-position-x: 0;
+  width: 50%;
+  height: 100%;
+  transform-origin: left;
+  transform: rotateY(0deg);
+  transition: transform 0.8s;
+
+  .cover_title {
+    text-align: right;
+  }
+}
+
+.cover_right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(rgba(0, 0 ,0, 0.1), rgba(0, 0 ,0, 0.1)),
+    url(../../app/images/bg_card_cover.jpg) no-repeat;
+  background-size:  cover;
+  background-position-x: -130px;
+  width: 50%;
+  height: 100%;
+  transform-origin: right;
+  transform: rotateY(0deg);
+  transition: transform 0.8s;
+}
+
+.page_1_container {
+  position: absolute;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: url(../../app/images/bg_card_page_1.png) no-repeat;
+  background-color: #d3d3d4;
+  background-size:  cover;
+  transform: translateZ(-100px);
+  transition: z-index 0.3s step-end, transform 0.8s;
+  margin: 0 auto;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+}
+
+.page_1 {
+  position: relative;
+  padding: 50px;
+}
+
+.card:hover .cover_left {
+  transform: rotateY(-360deg);
+  // background: url(../../app/images/bg_card_page_1.jpg) no-repeat;
+}
+
+.card:hover .cover_right {
+  transform: rotateY(360deg);
+  // background: url(../../app/images/bg_card_page_1.jpg) no-repeat;
+}
+
+.card:hover .page_1_container {
+  transform: translateZ(0);
+  z-index: 1;
+}
+
+.cover_title {
+  color: #fff;
+  font-size: 35px;
+}
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+pre {
+  margin-top: -72px;
+  margin-left: -4px;
+}
+
+#marquee {
+  text-align: center;
+}
+
+fieldset {
+  border: 0;
+  margin-bottom: 18px;
+}
+
+form label {
+  font-size: 18px;
+}
+
+.full-width input {
+  border: 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  width: 100%;
+  line-height: 28px;
+  font-size: 14px;
+  outline: none;
+  background: transparent;
+}
+
+.checkbox input {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  height: 20px;
+  width: 20px;
+  background-color: transparent !important;
+}
+
+button {
+  background: transparent;
+  border: none;
+  padding: 5px;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 22px;
+  outline: none;
+}
+
+// .container input {
+//   opacity: 0;
+//   height: 0;
+//   width: 0;
+// }
+
+/* END:  global styles */
