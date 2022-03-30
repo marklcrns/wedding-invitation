@@ -2,7 +2,7 @@ function mapContent(){
   var api_key = 'RXMMPIijGYSz6R439y78bdwFjhagK28P';
   var latAndLong = { lat: 14.541473883122439, lng: 120.97968998483387 };
   var zoomLevel = 14;
-  var yourAddress = 'YOUR_ADDRESS';
+  var yourAddress = 'Vikings Venue, Seaside Blvd, Pasay, Metro Manila, Philippines';
 
   var map = tt.map({
       container: 'map',
@@ -13,11 +13,6 @@ function mapContent(){
 
   var marker = new tt.Marker().setLngLat(latAndLong).addTo(map);
   
-  // FOR CUSTOM MARKER
-  //var customMarker = document.createElement('div');
-  //customMarker.id = 'marker';
-  //var marker = new tt.Marker({element: customMarker}).setLngLat(latAndLong).addTo(map);
-
   var popupOffsets = {
     top: [0, 0],
     bottom: [0, -70],

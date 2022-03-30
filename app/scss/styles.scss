@@ -86,9 +86,10 @@ img {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: url(images/bg_card_page_1.png) no-repeat;
+  background: url(images/bg_page_1.jpeg) no-repeat;
   background-color: #d3d3d4;
   background-size:  cover;
+  background-position: center;
   transform: translateZ(-100px);
   transition: z-index 0.3s step-end, transform 1s;
   margin: 0 auto;
@@ -97,7 +98,7 @@ img {
 
 .page_1 {
   position: relative;
-  padding: 30px;
+  padding: 60px;
 }
 
 .card:hover .cover_left {

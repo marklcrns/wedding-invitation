@@ -30,7 +30,7 @@
     <div id="header-hero-container">
       <header>
         <div class="flex container">
-          <a id="logo" href="#">Chesca & Mark</a>
+          <a id="logo" href="#">Wedding Guidelines</a>
 
           <nav>
             <button id="nav-toggle" class="hamburger-menu">
@@ -40,9 +40,9 @@
             </button>
 
             <ul id="nav-menu">
-              <li><a href="#">Home</a></li>
-              <li><a href="#covid-19">Covid 19 Guidelines</a></li>
+              <li><a href="#event">Event</a></li>
               <li><a href="#location">Location</a></li>
+              <li><a href="#covid-19">Covid 19</a></li>
               <li><a href="#contact">Contact</a></li>
               <li id="close-flyout"><span class="fas fa-times"></span></li>
 
@@ -68,18 +68,41 @@
     </div>
     <!-- Navbar end -->
 
+    <!-- Event start -->
+    <section id="event">
+      <div class="container">
+        <h2>Event</h2>
+        <h3>June 22, 2022</h3>
+        <h3>10:00 AM</h3>
+      </div>
+    </section>
+    <!-- Location end -->
+
+    <!-- Event start -->
+    <section id="location">
+      <div class="container">
+        <h2>Location</h2>
+        <h3>
+          <a href="https://goo.gl/maps/1UKoaNZJMsFwUwR5A" target="_blank">Vikings Venue, Seaside Blvd, Pasay, Metro Manila, Philippines</a>
+        </h3>
+        <!--The div element for the map -->
+        <div id="map"></div>
+      </div>
+    </section>
+    <!-- Location end -->
+
     <!-- About start -->
     <section id="covid-19">
       <div class="container">
         <h2>COVID-19 Guidelines</h2>
 
-        <div class="about-intro">
+        <div class="covid-19-intro">
           <div>
             <blockquote>
               <p>
-                We’re delighted to celebrate our special day with you. In light of COVID-19, Vikings Venue will be taking necessary precautions to ensure a safe and joyous celebration. 
-                You are encouraged to bring your face mask for the safety of yourself and others. Please make sure to keep a 6 feet distance from other guests as much as you can.
-                If you feel unwell or are experiencing COVID-19 symptoms, please stay home and cheer us virtually.
+              We’re delighted to celebrate our special day with you. In light of COVID-19, Vikings Venue will be taking necessary precautions to ensure a safe and joyous celebration. 
+              You are encouraged to bring your face mask for the safety of yourself and others. Please make sure to keep a 6 feet distance from other guests as much as you can.
+              If you feel unwell or are experiencing COVID-19 symptoms, please stay home and cheer us virtually.
               </p>
             </blockquote>
           </div>
@@ -88,22 +111,9 @@
     </section>
     <!-- About end -->
 
-    <!-- Location start -->
-    <section id="location">
-      <div class="container">
-        <h2>Location</h2>
-        <p>
-        Vikings Venue, Seaside Blvd, Pasay, Metro Manila, Philippines
-        </p>
-        <!--The div element for the map -->
-        <div id="map"></div>
-      </div>
-    </section>
-    <!-- Location end -->
-
     <section id="contact">
       <div class="container">
-        <h2>Contact Me</h2>
+        <h2>Contact Us</h2>
 
         <div class="flex">
           <div id="form-container">
@@ -145,44 +155,9 @@
       </div>
     </footer>
 
-    <!-- Google map -->
-    <script>
-      function mapContent(){
-        var api_key = 'RXMMPIijGYSz6R439y78bdwFjhagK28P';
-        var latAndLong = { lat: 14.541473883122439, lng: 120.97968998483387 };
-        var zoomLevel = 14;
-        var yourAddress = 'Vikings Venue, Seaside Blvd, Pasay, Metro Manila, Philippines';
-
-        var map = tt.map({
-            container: 'map',
-            key: api_key,
-            center: latAndLong,
-            zoom: zoomLevel
-        });
-
-        var marker = new tt.Marker().setLngLat(latAndLong).addTo(map);
-        
-        // FOR CUSTOM MARKER
-        //var customMarker = document.createElement('div');
-        //customMarker.id = 'marker';
-        //var marker = new tt.Marker({element: customMarker}).setLngLat(latAndLong).addTo(map);
-
-        var popupOffsets = {
-          top: [0, 0],
-          bottom: [0, -70],
-          'bottom-right': [0, -70],
-          'bottom-left': [0, -70],
-          left: [25, -35],
-          right: [-25, -35]
-        }
-
-        var popup = new tt.Popup({offset: popupOffsets}).setHTML(yourAddress);
-          marker.setPopup(popup).togglePopup();
-
-        }
-    </script>
-
-    <!-- <script type="text/javascript" src="dist/guidelines.js" type="javascript"></script> -->
+    <!-- Maps -->
+    <script type="text/javascript" src="dist/guidelines.js"></script>
+    <script type="text/javascript" src="dist/maps.js"></script>
     <script onload="mapContent();" src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.5.0/maps/maps-web.min.js" defer></script>
   </body>
 </html>
