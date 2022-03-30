@@ -4,8 +4,6 @@ document.querySelector('form').onsubmit = e => {
   e.target.reset();
   return false;
 };
-// Generate github calendar
-new GitHubCalendar(".calendar", "marklcrns", { responsive: true });
 
 $(function () {
   let headerElem = $('header');

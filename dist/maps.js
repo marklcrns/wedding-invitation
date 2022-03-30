@@ -1,2 +1,2 @@
-function initMap(){const e={lat:14.541473883122439,lng:120.97968998483387},n=new google.maps.Map(document.getElementById("map"),{zoom:4,center:e});new google.maps.Marker({position:e,map:n})}
+function mapContent(){var t={lat:14.541473883122439,lng:120.97968998483387},o=tt.map({container:"map",key:"RXMMPIijGYSz6R439y78bdwFjhagK28P",center:t,zoom:14}),e=(new tt.Marker).setLngLat(t).addTo(o),n=new tt.Popup({offset:{top:[0,0],bottom:[0,-70],"bottom-right":[0,-70],"bottom-left":[0,-70],left:[25,-35],right:[-25,-35]}}).setHTML("YOUR_ADDRESS");e.setPopup(n).togglePopup()}
 //# sourceMappingURL=maps.js.map

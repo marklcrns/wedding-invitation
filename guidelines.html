@@ -12,7 +12,6 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <!-- Custom -->
     <link rel="Stylesheet" type="text/css" href="dist/guidelines.css" />
-    <link rel="Stylesheet" type="text/css" href="dist/maps.css" />
 
     <!-- Scripts -->
 
@@ -22,8 +21,9 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/2c0cbf9739.js" crossorigin="anonymous"></script>
-    <!-- Google maps -->
-    <script type="text/javascript" src="dist/maps.js" type="javascript"></script>
+
+    <link rel='stylesheet' type='text/css' href='https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.5.0/maps/maps.css'>
+    <link rel="Stylesheet" type="text/css" href="dist/maps.css" />
   </head>
   <body>
     <!-- Navbar start -->
@@ -92,7 +92,9 @@
     <section id="location">
       <div class="container">
         <h2>Location</h2>
-        <h3>My Google Maps Demo</h3>
+        <p>
+        Vikings Venue, Seaside Blvd, Pasay, Metro Manila, Philippines
+        </p>
         <!--The div element for the map -->
         <div id="map"></div>
       </div>
@@ -144,8 +146,44 @@
     </footer>
 
     <!-- Google map -->
-    <script type="text/javascript" src="dist/guidelines.js" type="javascript"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfYzy5ZBdRoWTrmDqYTZvmY7Wyuym9k_k&callback=initMap&v=weekly" async></script>
+    <script>
+      function mapContent(){
+        var api_key = 'RXMMPIijGYSz6R439y78bdwFjhagK28P';
+        var latAndLong = { lat: 14.541473883122439, lng: 120.97968998483387 };
+        var zoomLevel = 14;
+        var yourAddress = 'Vikings Venue, Seaside Blvd, Pasay, Metro Manila, Philippines';
+
+        var map = tt.map({
+            container: 'map',
+            key: api_key,
+            center: latAndLong,
+            zoom: zoomLevel
+        });
+
+        var marker = new tt.Marker().setLngLat(latAndLong).addTo(map);
+        
+        // FOR CUSTOM MARKER
+        //var customMarker = document.createElement('div');
+        //customMarker.id = 'marker';
+        //var marker = new tt.Marker({element: customMarker}).setLngLat(latAndLong).addTo(map);
+
+        var popupOffsets = {
+          top: [0, 0],
+          bottom: [0, -70],
+          'bottom-right': [0, -70],
+          'bottom-left': [0, -70],
+          left: [25, -35],
+          right: [-25, -35]
+        }
+
+        var popup = new tt.Popup({offset: popupOffsets}).setHTML(yourAddress);
+          marker.setPopup(popup).togglePopup();
+
+        }
+    </script>
+
+    <!-- <script type="text/javascript" src="dist/guidelines.js" type="javascript"></script> -->
+    <script onload="mapContent();" src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.5.0/maps/maps-web.min.js" defer></script>
   </body>
 </html>
 

@@ -1,14 +1,17 @@
-/* Set the size of the div element that contains the map */
 #map {
-  height: 400px;
-  /* The height is 400 pixels */
+  height: 500px;
   width: 100%;
-  /* The width is the width of the web page */
 }
-/* Set the size of the div element that contains the map */
-#map {
-  height: 400px;
-  /* The height is 400 pixels */
-  width: 100%;
-  /* The width is the width of the web page */
+
+@media only screen and (max-width: 767px) {
+  #map {
+    height: 300px;
+  }
+}
+
+#marker {
+  background-image: url('/wp-content/uploads/2021/04/copywriter-logo-dark.svg');
+  background-size: cover;
+  width: 30px;
+  height: 30px;
 }
