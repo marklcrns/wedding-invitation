@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Union of Chesca & Mark</title>
+
+    <!-- CSS -->
+
+    <!-- Carousel -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Custom -->
+    <link rel="Stylesheet" type="text/css" href="dist/guidelines.css" />
+    <link rel="Stylesheet" type="text/css" href="dist/maps.css" />
+
+    <!-- Scripts -->
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Carousel -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/2c0cbf9739.js" crossorigin="anonymous"></script>
+    <!-- Google maps -->
+    <script type="text/javascript" src="dist/maps.js" type="javascript"></script>
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <div id="header-hero-container">
+      <header>
+        <div class="flex container">
+          <a id="logo" href="#">Chesca & Mark</a>
+
+          <nav>
+            <button id="nav-toggle" class="hamburger-menu">
+              <span class="strip"></span>
+              <span class="strip"></span>
+              <span class="strip"></span>
+            </button>
+
+            <ul id="nav-menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#covid-19">Covid 19 Guidelines</a></li>
+              <li><a href="#location">Location</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li id="close-flyout"><span class="fas fa-times"></span></li>
+
+              <li class="connect-icons">
+                <a href="https://github.com/marklcrns" target="_blank"><span class="fab fa-github"></span></a>
+                <a href="https://www.linkedin.com/in/marklucernas/" target="_blank"><span class="fab fa-linkedin"></span></a>
+                <a href="mailto:lucernas.mj@gmail.com" target="_blank"><span class="fas fa-envelope"></span></a>
+                <a href="https://github.com/marklcrns/marklcrns/raw/main/resources/resume_lts.pdf" target="_blank"><span class="fas fa-file-pdf"></span></a>
+              </li>
+            </ul>
+          </nav>
+
+        </div>
+      </header>
+
+      <section id="hero">
+        <div class="fade"></div>
+        <div class="hero-text">
+          <p>Union of</p>
+          <h1>Chesca & Mark</h1>
+        </div>
+      </section>
+    </div>
+    <!-- Navbar end -->
+
+    <!-- About start -->
+    <section id="covid-19">
+      <div class="container">
+        <h2>COVID-19 Guidelines</h2>
+
+        <div class="about-intro">
+          <div>
+            <blockquote>
+              <p>
+                We’re delighted to celebrate our special day with you. In light of COVID-19, Vikings Venue will be taking necessary precautions to ensure a safe and joyous celebration. 
+                You are encouraged to bring your face mask for the safety of yourself and others. Please make sure to keep a 6 feet distance from other guests as much as you can.
+                If you feel unwell or are experiencing COVID-19 symptoms, please stay home and cheer us virtually.
+              </p>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About end -->
+
+    <!-- Location start -->
+    <section id="location">
+      <div class="container">
+        <h2>Location</h2>
+        <h3>My Google Maps Demo</h3>
+        <!--The div element for the map -->
+        <div id="map"></div>
+      </div>
+    </section>
+    <!-- Location end -->
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+
+        <div class="flex">
+          <div id="form-container">
+            <h3>Contact Form</h3>
+            <form action="https://getform.io/f/32b051ae-f4bc-431f-b941-6fa3e27fcd8b" method="POST">
+              <label for="name">Name*</label>
+              <input type="text" name="name" required>
+
+              <label for="email">Email*</label>
+              <input type="email" name="email" required>
+
+              <label for="subject">Subject</label>
+              <input type="text" name="subject">
+
+              <label for="message">Message*</label>
+              <textarea name="message" placeholder="Message here..." required></textarea>
+
+              <small>Your information will not be stored or shared.</small>
+              <div class="email-submit flex">
+                <button class="rounded" type="submit">Send</button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <a href="https://github.com/marklcrns" target="_blank"><span class="fab fa-github"></span></a>
+        <a href="https://www.linkedin.com/in/marklucernas/" target="_blank"><span class="fab fa-linkedin"></span></a>
+        <a href="mailto:lucernas.mj@gmail.com" target="_blank"><span class="fas fa-envelope"></span></a>
+        <a href="https://github.com/marklcrns/marklcrns/raw/main/resources/resume_lts.pdf" target="_blank"><span class="fas fa-file-pdf"></span></a>
+
+        <small>
+          Copyright &copy; 2021 All rights reserved | Designed and Built by Mark Lucernas
+        </small>
+      </div>
+    </footer>
+
+    <!-- Google map -->
+    <script type="text/javascript" src="dist/guidelines.js" type="javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfYzy5ZBdRoWTrmDqYTZvmY7Wyuym9k_k&callback=initMap&v=weekly" async></script>
+  </body>
+</html>
+
+

@@ -1,0 +1,1 @@
+{"version":3,"sources":["maps.js"],"names":["initMap","vikings","lat","lng","map","google","maps","Map","document","getElementById","zoom","center","Marker","position"],"mappings":"AACA,SAASA,UAEP,MAAMC,EAAU,CAAEC,IAAK,mBAAoBC,IAAK,oBAE1CC,EAAM,IAAIC,OAAOC,KAAKC,IAAIC,SAASC,eAAe,OAAQ,CAC9DC,KAAM,EACNC,OAAQV,IAGK,IAAII,OAAOC,KAAKM,OAAO,CACpCC,SAAUZ,EACVG,IAAKA","file":"maps.js"}

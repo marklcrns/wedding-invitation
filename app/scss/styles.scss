@@ -1,14 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@700&family=Pinyon+Script&family=Rouge+Script&display=swap');
 $base-color: #f69314;
 $text-color: #777;
-$card-width: 360px;
-$card-height: 460px;
+$card-width: 400px;
+$card-height: 500px;
 
 /* START:  global styles */
 * {
   margin: 0;
   padding: 0;
-  font-family: "Cormorant Garamond", serif;
+  font-family: 'Charmonman', cursive;
+}
+
+.capital_cursive {
+  font-family: 'Pinyon Script', cursive;
+  font-size: 80px;
+  font-weight: normal;
 }
 
 img {
@@ -20,7 +26,7 @@ img {
 .container {
   width:  100%;
   height:  100vh;
-  background:  linear-gradient(rgba(0, 0 ,0, 0.8), rgba(0, 0 ,0, 0.5)),
+  background: linear-gradient(rgba(0, 0 ,0, 0.8), rgba(0, 0 ,0, 0.5)),
     url(images/bg.jpg) center no-repeat;
   background-size:  cover;
   display: flex;
@@ -39,16 +45,16 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(rgba(0, 0 ,0, 0.1), rgba(0, 0 ,0, 0.1)),
-    url(images/bg_card_cover.jpg) no-repeat;
-  background-size:  cover;
-  background-position-x: 0;
+  background: linear-gradient(rgba(255, 237, 233, 0.9), rgba(255, 237, 233, 0.65));
+  // background: linear-gradient(rgba(0, 0 ,0, 0.1), rgba(0, 0 ,0, 0.1)),
+  //   url(images/bg_card_cover.jpg) no-repeat;
+  // background-size:  cover;
+  // background-position-x: 0;
   width: 50%;
   height: 100%;
   transform-origin: left;
   transform: rotateY(0deg);
-  transition: transform 0.8s;
-
+  transition: transform 1s;
   .cover_title {
     text-align: right;
   }
@@ -58,15 +64,16 @@ img {
   position: absolute;
   top: 0;
   right: 0;
-  background: linear-gradient(rgba(0, 0 ,0, 0.1), rgba(0, 0 ,0, 0.1)),
-    url(images/bg_card_cover.jpg) no-repeat;
-  background-size:  cover;
-  background-position-x: -130px;
+  background: linear-gradient(rgba(255, 237, 233, 0.9), rgba(255, 237, 233, 0.65));
+  // background: linear-gradient(rgba(0, 0 ,0, 0.1), rgba(0, 0 ,0, 0.1)),
+  //   url(images/bg_card_cover.jpg) no-repeat;
+  // background-size:  cover;
+  // background-position-x: -130px;
   width: 50%;
   height: 100%;
   transform-origin: right;
   transform: rotateY(0deg);
-  transition: transform 0.8s;
+  transition: transform 1s;
 }
 
 .page_1_container {
@@ -83,14 +90,14 @@ img {
   background-color: #d3d3d4;
   background-size:  cover;
   transform: translateZ(-100px);
-  transition: z-index 0.3s step-end, transform 0.8s;
+  transition: z-index 0.3s step-end, transform 1s;
   margin: 0 auto;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
 }
 
 .page_1 {
   position: relative;
-  padding: 50px;
+  padding: 30px;
 }
 
 .card:hover .cover_left {
@@ -109,7 +116,7 @@ img {
 }
 
 .cover_title {
-  color: #fff;
+  color: $text-color;
   font-size: 35px;
 }
 
@@ -162,11 +169,5 @@ button {
   font-size: 22px;
   outline: none;
 }
-
-// .container input {
-//   opacity: 0;
-//   height: 0;
-//   width: 0;
-// }
-
 /* END:  global styles */
+

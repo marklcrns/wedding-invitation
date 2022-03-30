@@ -1,5 +1,5 @@
 var marquee = document.querySelector('#marquee');
-var text = "Please reply by\nJune 10th, 2022\nThank you!";
+var text = "See you soon!";
 var textlen = text.length;
 var i = -1;
 var time = setInterval(myfunc,50);
@@ -24,6 +24,17 @@ form.addEventListener("submit", e => {
       response => response.json()
   ).then((html) => {
     // you can put any JS code here
-    alert('success')
+    vaccinated = document.getElementById("vaccinated").checked
+    attending = document.getElementById("attending").checked
+    form.reset()
+    if (vaccinated) {
+      if (attending) {
+        window.location.replace("thankyou.html");
+      } else {
+        window.location.replace("absent.html");
+      }
+    } else {
+      window.location.replace("unvaccinated.html");
+    }
   });
 });
