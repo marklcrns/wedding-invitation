@@ -1,18 +1,3 @@
-var marquee = document.querySelector('#marquee');
-var text = "See you soon!";
-var textlen = text.length;
-var i = -1;
-var time = setInterval(myfunc,50);
-
-function myfunc(){
-  i++;
-  marquee.innerHTML += text.charAt(i);
-  // if(i == textlen){
-  //   clearInterval(time);
-  //   marquee.innerHTML = "Thank you for visiting!.";
-  // }
-}
-
 // Form submission
 var form = document.getElementById('sheetdb-form');
 form.addEventListener("submit", e => {

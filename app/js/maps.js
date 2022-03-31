@@ -12,7 +12,7 @@ function mapContent(){
   });
 
   var marker = new tt.Marker().setLngLat(latAndLong).addTo(map);
-  
+
   var popupOffsets = {
     top: [0, 0],
     bottom: [0, -70],

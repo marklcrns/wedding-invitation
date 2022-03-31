@@ -1,0 +1,2 @@
+var marquee=document.querySelector("#marquee"),text="orry to hear you're not coming :(",textlen=text.length,i=-1,time=setInterval(myfunc,50);function myfunc(){i++,marquee.innerHTML+=text.charAt(i)}
+//# sourceMappingURL=absent.js.map

@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@700&family=Pinyon+Script&family=Rouge+Script&display=swap');
-$base-color: #f69314;
+$base-color: #bfae9f;
 $text-color: #777;
 $card-width: 400px;
-$card-height: 500px;
+$card-height: 520px;
 
 /* START:  global styles */
 * {
@@ -39,17 +39,33 @@ img {
   height: $card-height;
   position: relative;
   perspective: 1000px;
+  text-align: center;
+
+  a {
+    color: $base-color;
+    font-size: 22px;
+  }
+
+  a:link,
+  a:visited {
+    text-decoration: none;
+  }
+
+  a:active,
+  a:hover {
+    text-decoration: underline;
+  }
 }
 
 .cover_left {
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(rgba(255, 237, 233, 0.9), rgba(255, 237, 233, 0.65));
-  // background: linear-gradient(rgba(0, 0 ,0, 0.1), rgba(0, 0 ,0, 0.1)),
-  //   url(images/bg_card_cover.jpg) no-repeat;
-  // background-size:  cover;
-  // background-position-x: 0;
+  // background: rgb(255, 237, 233);
+  background: linear-gradient(rgba(0, 0 ,0, 0.2), rgba(0, 0 ,0, 0.1)),
+    url(images/bg_page_5.jpeg) no-repeat;
+  background-size:  cover;
+  background-position-x: 0;
   width: 50%;
   height: 100%;
   transform-origin: left;
@@ -64,16 +80,19 @@ img {
   position: absolute;
   top: 0;
   right: 0;
-  background: linear-gradient(rgba(255, 237, 233, 0.9), rgba(255, 237, 233, 0.65));
-  // background: linear-gradient(rgba(0, 0 ,0, 0.1), rgba(0, 0 ,0, 0.1)),
-  //   url(images/bg_card_cover.jpg) no-repeat;
-  // background-size:  cover;
-  // background-position-x: -130px;
+  // background: rgb(255, 237, 233);
+  background: linear-gradient(rgba(0, 0 ,0, 0.2), rgba(0, 0 ,0, 0.1)),
+    url(images/bg_page_5.jpeg) no-repeat;
+  background-size:  cover;
+  background-position-x: -150px;
   width: 50%;
   height: 100%;
   transform-origin: right;
   transform: rotateY(0deg);
   transition: transform 1s;
+  .cover_title {
+    text-align: left;
+  }
 }
 
 .page_1_container {
@@ -86,7 +105,7 @@ img {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: url(images/bg_page_1.jpeg) no-repeat;
+  background: url(images/bg_page_8.jpeg) no-repeat;
   background-color: #d3d3d4;
   background-size:  cover;
   background-position: center;
@@ -98,7 +117,8 @@ img {
 
 .page_1 {
   position: relative;
-  padding: 60px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .card:hover .cover_left {
@@ -142,7 +162,7 @@ fieldset {
 }
 
 form label {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .full-width input {
@@ -150,7 +170,7 @@ form label {
   border-bottom: 2px solid rgba(0, 0, 0, 0.5);
   width: 100%;
   line-height: 28px;
-  font-size: 14px;
+  font-size: 16px;
   outline: none;
   background: transparent;
 }
@@ -170,5 +190,6 @@ button {
   font-size: 22px;
   outline: none;
 }
+
 /* END:  global styles */
 

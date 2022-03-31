@@ -1,0 +1,2 @@
+var marquee=document.querySelector("#marquee"),text="orry, we are required to be fully vaccinated first :(",textlen=text.length,i=-1,time=setInterval(myfunc,50);function myfunc(){i++,marquee.innerHTML+=text.charAt(i)}
+//# sourceMappingURL=unvaccinated.js.map

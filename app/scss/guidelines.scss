@@ -244,6 +244,36 @@ header ul.is-sticky li a.active {
   }
 }
 
+#event {
+  .dot {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .heart {
+    display:inline-block;
+    width: 50px; 
+    aspect-ratio: 1;
+    clip-path: polygon(-41% 0,50% 91%, 141% 0);
+  }
+
+  .nude_1 {
+    border-image: radial-gradient(#f1dcc9 69%,#0000 70%) 84.5% fill/100%;
+  }
+  .nude_2 {
+    border-image: radial-gradient(#c09175 69%,#0000 70%) 84.5% fill/100%;
+  }
+  .nude_3 {
+    border-image: radial-gradient(#bd8270 69%,#0000 70%) 84.5% fill/100%;
+  }
+  .nude_4 {
+    border-image: radial-gradient(#e7bab4 69%,#0000 70%) 84.5% fill/100%;
+  }
+}
+
 #covid-19 {
   .covid-19-intro {
     margin-bottom: 8rem;
@@ -267,12 +297,12 @@ header ul.is-sticky li a.active {
 
     a:link,
     a:visited {
-      text-decoration: none;
+      text-decoration: underline;
     }
 
     a:active,
     a:hover {
-      text-decoration: underline;
+      text-decoration: none;
     }
   }
 }
