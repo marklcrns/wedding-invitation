@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@700&family=Pinyon+Script&family=Rouge+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@700&family=Cormorant+Garamond&family=Pinyon+Script&display=swap');
 $base-color: #bfae9f;
 $text-color: #333;
 $card-width: 400px;
@@ -56,6 +56,10 @@ img {
   a:hover {
     text-decoration: underline;
   }
+
+  .hashtag {
+    font-family: 'Cormorant Garamond', serif;
+  }
 }
 
 .cover_left {
@@ -72,6 +76,13 @@ img {
   transition: transform 1s;
   .cover_title {
     text-align: right;
+    padding-top: 100px;
+    padding-right: 30px;
+  }
+  .cover_and {
+    text-align: right;
+    padding-right: 10px;
+    padding-bottom: 150px;
   }
 }
 
@@ -81,7 +92,7 @@ img {
   right: 0;
   background: url(images/bg_page_5.jpeg) no-repeat;
   background-size:  cover;
-  background-position-x: -150px;
+  background-position-x: -195px;
   width: 50%;
   height: 100%;
   transform-origin: right;
@@ -89,6 +100,7 @@ img {
   transition: transform 1s;
   .cover_title {
     text-align: left;
+    padding-top: 210px;
   }
 }
 
