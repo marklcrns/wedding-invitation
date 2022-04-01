@@ -1,185 +1,621 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="no-js">
+
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Union of Mark & Chesca</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mark & Chesca</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Mark & Chesca - Wedding Guidelines" />
+    <meta name="keywords" content="mark, chesca, wedding, rsvp" />
+    <meta name="author" content="Mark Lucernas" />
+    <link rel="shortcut icon" href="favicon.ico">
 
-    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" />
+    <link rel="stylesheet" href="dist/css/normalize.css">
+    <link rel="stylesheet" href="dist/css/owl-carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
 
-    <!-- Carousel -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <!-- Custom -->
-    <link rel="Stylesheet" type="text/css" href="dist/guidelines.css" />
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dist/css/guidelines.css" type="text/css" />
 
-    <!-- Scripts -->
-
-    <!-- jQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- Carousel -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-    <link rel='stylesheet' type='text/css' href='https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.5.0/maps/maps.css'>
-    <link rel="Stylesheet" type="text/css" href="dist/maps.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="dist/js/modernizer.custom.js"></script>
   </head>
+
   <body>
-    <!-- Navbar start -->
-    <div id="header-hero-container">
-      <header>
-        <div class="flex container">
-          <a id="logo" href="#">Wedding Guidelines</a>
+    <!-- Loading animation -->
+    <div class="preloader">
+      <div class="preloader-animation">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+      </div>
+    </div>
+    <!-- /Loading animation -->
 
-          <nav>
-            <button id="nav-toggle" class="hamburger-menu">
-              <span class="strip"></span>
-              <span class="strip"></span>
-              <span class="strip"></span>
-            </button>
+    <div id="main-container">
 
-            <ul id="nav-menu">
-              <li><a href="#event">Event</a></li>
-              <li><a href="#location">Location</a></li>
-              <li><a href="#covid-19">Covid 19</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li id="close-flyout"><span class="fas fa-times"></span></li>
+      <!-- Header -->
+      <header id="header" class="header">
+        <div class="container clearfix">
+          <div class="logo-container">
+            <div class="header-logo">Mark <span class="main-color">&amp;</span> Chesca</div>
+          </div>
 
-              <li class="connect-icons">
-                <a href="https://github.com/marklcrns" target="_blank"><span class="fab fa-github"></span></a>
-                <a href="https://www.linkedin.com/in/marklucernas/" target="_blank"><span class="fab fa-linkedin"></span></a>
-                <a href="mailto:lucernas.mj@gmail.com" target="_blank"><span class="fas fa-envelope"></span></a>
-                <a href="https://github.com/marklcrns/marklcrns/raw/main/resources/resume_lts.pdf" target="_blank"><span class="fas fa-file-pdf"></span></a>
-              </li>
-            </ul>
-          </nav>
-
+          <div class="header-date mobile-hidden">
+            <p>Wednesday, 22 <span class="main-color">June</span> 2022</p>
+          </div>
+          <a class="menu-toggle mobile-visible">
+            <i class="fa fa-bars"></i>
+          </a>
         </div>
       </header>
+      <!-- /Header -->
 
-      <section id="hero">
-        <div class="fade"></div>
-        <div class="hero-text">
-          <h3>Union of</h3>
-          <h1>Mark & Chesca</h1>
-          <h3>#joMarkpotkayChesca</h3>
+      <!-- Site Navigation -->
+      <nav class="main-nav mobile-menu-hide">
+        <div class="container">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#wedding-day">Our Day</a>
+            </li>
+            <li>
+              <a href="#story">Our Story</a>
+            </li>
+            <li>
+              <a href="#events">Wedding Events</a>
+            </li>
+            <li>
+              <a href="#gallery">Gallery</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
-      </section>
-    </div>
-    <!-- Navbar end -->
+      </nav>
+      <!-- /Site Navigation -->
 
-    <!-- Event start -->
-    <section id="event">
-      <div class="container">
-        <h2>Event</h2>
-        <h3><i class="fa-solid fa-calendar-day"></i> June 22, 2022 <i class="fa-solid fa-clock"></i> 10:00 AM</h3>
-        <br>
-        <h2><i class="fa-solid fa-shirt"></i></h2>
-        <div class="color-pallet">
-          <span class="heart nude_1"></span>
-          <span class="heart nude_2"></span>
-          <span class="heart nude_3"></span>
-          <span class="heart nude_4"></span>
-        </div>
-        <div>
-            <p>Semi formal</p>
-            <p>No colored dress. Please match one of colors in the palette.</p>
-          <h3><i class="fa-solid fa-mars"></i> Gentleman</h3>
-          <h3><i class="fa-solid fa-venus"></i> Lady</h3>
-        </div>
-        </table>
-      </div>
-    </section>
-    <!-- Event end -->
-
-    <!-- Location start -->
-    <section id="location">
-      <div class="container">
-        <h2>Location</h2>
-        <h3>
-          <a href="https://goo.gl/maps/1UKoaNZJMsFwUwR5A" target="_blank">Vikings Venue, Seaside Blvd, Pasay, Metro Manila, Philippines</a>
-        </h3>
-        <!--The div element for the map -->
-        <div id="map"></div>
-      </div>
-    </section>
-    <!-- Location end -->
-
-    <!-- About start -->
-    <section id="covid-19">
-      <div class="container">
-        <h2>COVID-19 Guidelines</h2>
-
-        <div class="covid-19-intro">
-          <div>
-            <blockquote>
-              <p>
-              We’re delighted to celebrate our special day with you. In light of COVID-19, Vikings Venue will be taking necessary precautions to ensure a safe and joyous celebration. 
-              You are encouraged to bring your face mask for the safety of yourself and others. Please make sure to keep a 6 feet distance from other guests as much as you can.
-              If you feel unwell or are experiencing COVID-19 symptoms, please stay home and cheer us virtually.
-              </p>
-            </blockquote>
+      <div class="sections">
+        <!-- Home Section -->
+        <section id="home" class="home-section clearfix">
+          <div id="hs-image-block" class="hs-image-block" style="background-image: url(dist/images/bg.jpg); background-attachment: fixed; background-position: 50% 0;" data-stellar-background-ratio="0.3">
+            <div class="hs-mask"></div>
           </div>
-        </div>
-      </div>
-    </section>
-    <!-- About end -->
 
-    <!-- Contant Us start -->
-    <section id="contact">
-      <div class="container">
-        <h2>Contact Us</h2>
+          <div class="hs-main-content container">
+            <div class="hs-section-title">
+              <h1>We're Getting Married!</h1>
+              <h3>#joMarkpotkayChesca</h3>
+            </div>
 
-        <div class="flex">
-          <div id="form-container">
-            <h3>Contact Form</h3>
-            <form action="https://getform.io/f/32b051ae-f4bc-431f-b941-6fa3e27fcd8b" method="POST">
-              <label for="name">Name*</label>
-              <input type="text" name="name" required>
+            <div class="about-us clearfix">
+              <div class="about-us-block first-block">
+                <div class="top-block">
+                  <div class="name">
+                    <h2>Mark</h2>
+                    <p>Lucernas</p>
+                    <ul class="social-links">
+                      <li><a class="tip social-button" href="https://www.instagram.com/marklcrns/" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                      <li><a class="tip social-button" href="https://www.facebook.com/marklcrns" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                      <li><a class="tip social-button" href="https://twitter.com/Marklcrns" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                  </div>
 
-              <label for="email">Email*</label>
-              <input type="email" name="email" required>
-
-              <label for="subject">Subject</label>
-              <input type="text" name="subject">
-
-              <label for="message">Message*</label>
-              <textarea name="message" placeholder="Message here..." required></textarea>
-
-              <small>Your information will not be stored or shared.</small>
-              <div class="email-submit flex">
-                <button class="rounded" type="submit">Send</button>
+                  <div class="photo">
+                    <img src="dist/images/groom_1.gif" alt="">
+                  </div>
+                </div>
+                <div class="bottom-block">
+                  <p>Nulla eros eros, tincidunt in tempor vitae, pellentesque non mi. Mauris eu molestie lacus, eget dictum orci. Etiam semper mauris neque, in posuere lacus varius.</p>
+                </div>
               </div>
-            </form>
+
+              <div class="link-icon">
+                <img src="dist/images/rings.png" alt="">
+              </div>
+
+              <div class="about-us-block second-block">
+                <div class="top-block">
+                  <div class="name">
+                    <h2>Chesca</h2>
+                    <p>Silvino</p>
+                    <ul class="social-links">
+                      <li><a class="tip social-button" href="https://www.instagram.com/cescaslvn/" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                      <li><a class="tip social-button" href="https://www.facebook.com/cescasilvino" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                      <li><a class="tip social-button" href="https://twitter.com/cesca_slvn" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                  </div>
+
+                  <div class="photo">
+                    <img src="dist/images/bride_1.jpg" alt="">
+                  </div>
+                </div>
+                <div class="bottom-block">
+                  <p>Nulla eros eros, tincidunt in tempor vitae, pellentesque non mi. Mauris eu molestie lacus, eget dictum orci. Etiam semper mauris neque, in posuere lacus varius.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /Home Section -->
+
+        <!-- Our Day Section -->
+        <section id="wedding-day" class="wedding-day section-boxed">
+          <div class="container">
+            <div class="section-title">
+              <h2>Wednesday, 22 <span class="main-color">June</span> 2022</h2>
+            </div>
+            <!-- Counter -->
+            <div id="count" class="count">
+              <!-- You can edit HTML code of this block in the js/main.js -->
+            </div>
+            <!-- Counter -->
+
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id tellus pretium quam sodales luctus. Nunc nec lacus ac arcu iaculis accumsan dictum a nulla. Nullam malesuada pellentesque turpis, eu elementum risus sagittis in. Nunc sit
+            amet arcu justo.</p>
 
           </div>
-        </div>
+        </section>
+        <!-- /Our Day Section -->
+
+        <!-- Our Story Section -->
+        <section id="story" class="our-story section-boxed section-bg-color">
+          <div class="container">
+            <div class="section-title">
+              <h2>Our Story</h2>
+            </div>
+            <!-- Story Row 1 -->
+            <div class="row story-row">
+              <div class="col-sm-12 col-md-5 story-block text-center">
+                <div class="story-image scale-image-effect">
+                  <img src="dist/images/story_photo_1.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-2 story-block text-center">
+                <div class="story-date">
+                  <div class="year">2017</div>
+                  <div class="month">Jan</div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-5 story-block text-center">
+                <h3>Morbi dapibus enim mollis</h3>
+                <p>Maecenas vestibulum volutpat nisl. Nulla faucibus, quam eget auctor vulputate, elit ante commodo erat, et pretium purus massa et nunc. Duis vitae nisl eget metus gravida maximus non mattis nunc. Etiam posuere sodales mollis.
+                Donec viverra egestas lorem, at varius sem congue quis.</p>
+              </div>
+              <div class="vertical-line"></div>
+            </div>
+            <!-- /Story Row 1 -->
+
+            <!-- Story Row 2 -->
+            <div class="row story-row">
+              <div class="col-sm-12 col-md-5 col-md-push-7 story-block text-center">
+                <div class="story-image scale-image-effect">
+                  <img src="dist/images/story_photo_2.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-2 story-block text-center">
+                <div class="story-date">
+                  <div class="year">2017</div>
+                  <div class="month">Feb</div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-5 col-md-pull-7 story-block text-center">
+                <h3>Sed vitae eros nisl</h3>
+                <p>Maecenas vestibulum volutpat nisl. Nulla faucibus, quam eget auctor vulputate, elit ante commodo erat, et pretium purus massa et nunc. Duis vitae nisl eget metus gravida maximus non mattis nunc. Etiam posuere sodales mollis.
+                Donec viverra egestas lorem, at varius sem congue quis.</p>
+              </div>
+              <div class="vertical-line"></div>
+            </div>
+            <!-- /Story Row 2 -->
+
+            <!-- Story Row 3 -->
+            <div class="row story-row">
+              <div class="col-sm-12 col-md-5 story-block text-center">
+                <div class="story-image scale-image-effect">
+                  <img src="dist/images/story_photo_3.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-2 story-block text-center">
+                <div class="story-date">
+                  <div class="year">2018</div>
+                  <div class="month">Sept</div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-5 story-block text-center">
+                <h3>Sed scelerisque</h3>
+                <p>Maecenas vestibulum volutpat nisl. Nulla faucibus, quam eget auctor vulputate, elit ante commodo erat, et pretium purus massa et nunc. Duis vitae nisl eget metus gravida maximus non mattis nunc. Etiam posuere sodales mollis.
+                Donec viverra egestas lorem, at varius sem congue quis.</p>
+              </div>
+              <div class="vertical-line"></div>
+            </div>
+            <!-- /Story Row 3 -->
+
+            <!-- Story Row 4 -->
+            <div class="row story-row">
+              <div class="col-sm-12 col-md-5 col-md-push-7 story-block text-center">
+                <div class="story-image scale-image-effect">
+                  <img src="dist/images/story_photo_4.gif" alt="">
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-2 story-block text-center">
+                <div class="story-date">
+                  <div class="year">2018</div>
+                  <div class="month">Oct</div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-5 col-md-pull-7 story-block text-center">
+                <h3>Sed vitae eros nisl</h3>
+                <p>Maecenas vestibulum volutpat nisl. Nulla faucibus, quam eget auctor vulputate, elit ante commodo erat, et pretium purus massa et nunc. Duis vitae nisl eget metus gravida maximus non mattis nunc. Etiam posuere sodales mollis.
+                Donec viverra egestas lorem, at varius sem congue quis.</p>
+              </div>
+              <div class="vertical-line"></div>
+            </div>
+            <!-- /Story Row 4 -->
+
+            <!-- Story Row 5 -->
+            <div class="row story-row">
+              <div class="col-sm-12 col-md-5 story-block text-center">
+                <div class="story-image scale-image-effect">
+                  <img src="dist/images/story_photo_5.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-2 story-block text-center">
+                <div class="story-date">
+                  <div class="year">2021</div>
+                  <div class="month">Apr</div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-5 story-block text-center">
+                <h3>Sed scelerisque</h3>
+                <p>Maecenas vestibulum volutpat nisl. Nulla faucibus, quam eget auctor vulputate, elit ante commodo erat, et pretium purus massa et nunc. Duis vitae nisl eget metus gravida maximus non mattis nunc. Etiam posuere sodales mollis.
+                Donec viverra egestas lorem, at varius sem congue quis.</p>
+              </div>
+              <div class="vertical-line"></div>
+            </div>
+            <!-- /Story Row 5 -->
+          </div>
+        </section>
+        <!-- /Our Story Section -->
+
+        <!-- Wedding Events Section -->
+        <section id="events" class="our-story section-boxed">
+          <div class="container">
+            <div class="section-title">
+              <h2>Wedding Events</h2>
+              <p class="intro">
+              We’re delighted to celebrate our special day with you. In light of COVID-19, Vikings Venue will be taking necessary precautions to ensure a safe and joyous celebration. You are encouraged to bring your face mask for the safety of yourself and others. Please make sure to keep a 6 feet distance from other guests as much as you can. If you feel unwell or are experiencing COVID-19 symptoms, please stay home and cheer us virtually.</p>
+            </div>
+
+            <div class="row">
+              <!-- Ceremony Block -->
+              <div class="col-md-6 event-block">
+                <div class="event-photo scale-image-effect">
+                  <img src="dist/images/photo_the_ceremony.jpg" alt="">
+                </div>
+
+                <div class="event-title">
+                  <h3>The Ceremony</h3>
+                </div>
+
+                <div class="event-info">
+                  <div class="event-date"><i class="fa fa-calendar"></i> Wednesday, 22 June 2022</div>
+                  <div class="event-time"><i class="fa fa-clock-o"></i> 12:00 PM - 15:00 PM</div>
+                  <div class="event-address"><i class="fa fa-map-marker"></i> Vikings Venue, Seaside Blvd, Pasay, Metro Manila, Philippines</div>
+                  <a class="button small-button lightbox mfp-iframe" href="https://maps.google.com/maps?q=Vikings+Venue+,Seaside+Blvd,+Pasay,+Metro+Manila,+Philippines" title="The Ceremony">View on Map</a>
+                  <!-- Do not change 'https://maps.google.com/maps?q=' in the href, simply change the address. Remake "221B Baker Street, London, United Kingdom +", as example, in this form: "221B+Baker+Street,+London,+United+Kingdom". -->
+                </div>
+              </div>
+              <!-- /Ceremony Block -->
+
+              <!-- Party Block -->
+              <div class="col-md-6 event-block">
+                <div class="event-photo scale-image-effect">
+                  <img src="dist/images/photo_the_party.jpg" alt="">
+                </div>
+
+                <div class="event-title">
+                  <h3>The Party</h3>
+                </div>
+
+                <div class="event-info">
+                  <div class="event-date"><i class="fa fa-calendar"></i> Wednesday, 22 June 2022</div>
+                  <div class="event-time"><i class="fa fa-clock-o"></i> 15:00 PM - 18:00 PM</div>
+                  <div class="event-address"><i class="fa fa-map-marker"></i> Vikings Venue, Seaside Blvd, Pasay, Metro Manila, Philippines</div>
+                  <a class="button small-button lightbox mfp-iframe" href="https://maps.google.com/maps?q=Vikings+Venue+,Seaside+Blvd,+Pasay,+Metro+Manila,+Philippines" title="The Party">View on Map</a>
+                  <!-- Do not change 'https://maps.google.com/maps?q=' in the href, simply change the address. Remake "2 Baker Street, London, United Kingdom +", as example, in this form: "2+Baker+Street,+London,+United+Kingdom". -->
+                </div>
+              </div>
+              <!-- /Party Block -->
+            </div>
+          </div>
+        </section>
+        <!-- /Wedding Events Section -->
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery section-boxed section-bg-color">
+          <div class="container">
+            <div class="section-title">
+              <h2>Gallery</h2>
+            </div>
+
+            <!-- Gallery Items -->
+            <div class="row gallery-grid">
+              <div class="col-sm-6 col-md-4 gallery-item">
+                <a href="dist/images/gallery/gallery_photo_1.jpg" title="Proin fermentum ante ut dui porttitor semper">
+                  <img class="img-thumbnail" src="dist/images/gallery/gallery_photo_1.jpg" alt="">
+                  <div class="mask"></div>
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 gallery-item">
+                <a href="dist/images/gallery/gallery_photo_2.jpg" title="Proin fermentum ante ut dui porttitor semper">
+                  <img class="img-thumbnail" src="dist/images/gallery/gallery_photo_2.jpg" alt="">
+                  <div class="mask"></div>
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 gallery-item">
+                <a href="dist/images/gallery/gallery_photo_3.jpg" title="Proin fermentum ante ut dui porttitor semper">
+                  <img class="img-thumbnail" src="dist/images/gallery/gallery_photo_3.jpg" alt="">
+                  <div class="mask"></div>
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 gallery-item">
+                <a href="dist/images/gallery/gallery_photo_4.jpg" title="Proin fermentum ante ut dui porttitor semper">
+                  <img class="img-thumbnail" src="dist/images/gallery/gallery_photo_4.jpg" alt="">
+                  <div class="mask"></div>
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 gallery-item">
+                <a href="dist/images/gallery/gallery_photo_5.jpg" title="Proin fermentum ante ut dui porttitor semper">
+                  <img class="img-thumbnail" src="dist/images/gallery/gallery_photo_5.jpg" alt="">
+                  <div class="mask"></div>
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 gallery-item">
+                <a href="dist/images/gallery/gallery_photo_6.jpg" title="Proin fermentum ante ut dui porttitor semper">
+                  <img class="img-thumbnail" src="dist/images/gallery/gallery_photo_6.jpg" alt="">
+                  <div class="mask"></div>
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 gallery-item">
+                <a href="dist/images/gallery/gallery_photo_7.jpg" title="Proin fermentum ante ut dui porttitor semper">
+                  <img class="img-thumbnail" src="dist/images/gallery/gallery_photo_7.jpg" alt="">
+                  <div class="mask"></div>
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 gallery-item">
+                <a href="dist/images/gallery/gallery_photo_8.jpg" title="Proin fermentum ante ut dui porttitor semper">
+                  <img class="img-thumbnail" src="dist/images/gallery/gallery_photo_8.jpg" alt="">
+                  <div class="mask"></div>
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 gallery-item">
+                <a href="dist/images/gallery/gallery_photo_9.jpg" title="Proin fermentum ante ut dui porttitor semper">
+                  <img class="img-thumbnail" src="dist/images/gallery/gallery_photo_9.jpg" alt="">
+                  <div class="mask"></div>
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 gallery-item">
+                <a href="dist/images/gallery/gallery_photo_10.jpg" title="Proin fermentum ante ut dui porttitor semper">
+                  <img class="img-thumbnail" src="dist/images/gallery/gallery_photo_10.jpg" alt="">
+                  <div class="mask"></div>
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 gallery-item">
+                <a href="dist/images/gallery/gallery_photo_11.jpg" title="Proin fermentum ante ut dui porttitor semper">
+                  <img class="img-thumbnail" src="dist/images/gallery/gallery_photo_11.jpg" alt="">
+                  <div class="mask"></div>
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 gallery-item">
+                <a href="dist/images/gallery/gallery_photo_12.jpg" title="Proin fermentum ante ut dui porttitor semper">
+                  <img class="img-thumbnail" src="dist/images/gallery/gallery_photo_12.jpg" alt="">
+                  <div class="mask"></div>
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 gallery-item">
+                <a href="dist/images/gallery/gallery_photo_13.jpg" title="Proin fermentum ante ut dui porttitor semper">
+                  <img class="img-thumbnail" src="dist/images/gallery/gallery_photo_13.jpg" alt="">
+                  <div class="mask"></div>
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 gallery-item">
+                <a href="dist/images/gallery/gallery_photo_14.jpg" title="Proin fermentum ante ut dui porttitor semper">
+                  <img class="img-thumbnail" src="dist/images/gallery/gallery_photo_14.jpg" alt="">
+                  <div class="mask"></div>
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 gallery-item">
+                <a href="dist/images/gallery/gallery_photo_15.jpg" title="Proin fermentum ante ut dui porttitor semper">
+                  <img class="img-thumbnail" src="dist/images/gallery/gallery_photo_15.jpg" alt="">
+                  <div class="mask"></div>
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 gallery-item">
+                <a href="dist/images/gallery/gallery_photo_16.jpg" title="Proin fermentum ante ut dui porttitor semper">
+                  <img class="img-thumbnail" src="dist/images/gallery/gallery_photo_16.jpg" alt="">
+                  <div class="mask"></div>
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 gallery-item">
+                <a href="dist/images/gallery/gallery_photo_17.jpg" title="Proin fermentum ante ut dui porttitor semper">
+                  <img class="img-thumbnail" src="dist/images/gallery/gallery_photo_17.jpg" alt="">
+                  <div class="mask"></div>
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 gallery-item">
+                <a href="dist/images/gallery/gallery_photo_18.jpg" title="Proin fermentum ante ut dui porttitor semper">
+                  <img class="img-thumbnail" src="dist/images/gallery/gallery_photo_18.jpg" alt="">
+                  <div class="mask"></div>
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 gallery-item">
+                <a href="dist/images/gallery/gallery_photo_19.jpg" title="Proin fermentum ante ut dui porttitor semper">
+                  <img class="img-thumbnail" src="dist/images/gallery/gallery_photo_19.jpg" alt="">
+                  <div class="mask"></div>
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 gallery-item">
+                <a href="dist/images/gallery/gallery_photo_20.jpg" title="Proin fermentum ante ut dui porttitor semper">
+                  <img class="img-thumbnail" src="dist/images/gallery/gallery_photo_20.jpg" alt="">
+                  <div class="mask"></div>
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 gallery-item">
+                <a href="dist/images/gallery/gallery_photo_21.jpg" title="Proin fermentum ante ut dui porttitor semper">
+                  <img class="img-thumbnail" src="dist/images/gallery/gallery_photo_21.jpg" alt="">
+                  <div class="mask"></div>
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 gallery-item">
+                <a href="dist/images/gallery/gallery_photo_22.jpg" title="Proin fermentum ante ut dui porttitor semper">
+                  <img class="img-thumbnail" src="dist/images/gallery/gallery_photo_22.jpg" alt="">
+                  <div class="mask"></div>
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 gallery-item">
+                <a href="dist/images/gallery/gallery_photo_23.jpg" title="Proin fermentum ante ut dui porttitor semper">
+                  <img class="img-thumbnail" src="dist/images/gallery/gallery_photo_23.jpg" alt="">
+                  <div class="mask"></div>
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 gallery-item">
+                <a href="dist/images/gallery/gallery_photo_24.jpg" title="Proin fermentum ante ut dui porttitor semper">
+                  <img class="img-thumbnail" src="dist/images/gallery/gallery_photo_24.jpg" alt="">
+                  <div class="mask"></div>
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 gallery-item">
+                <a href="dist/images/gallery/gallery_photo_25.jpg" title="Proin fermentum ante ut dui porttitor semper">
+                  <img class="img-thumbnail" src="dist/images/gallery/gallery_photo_25.jpg" alt="">
+                  <div class="mask"></div>
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 gallery-item">
+                <a href="dist/images/gallery/gallery_photo_26.jpg" title="Proin fermentum ante ut dui porttitor semper">
+                  <img class="img-thumbnail" src="dist/images/gallery/gallery_photo_26.jpg" alt="">
+                  <div class="mask"></div>
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 gallery-item">
+                <a href="dist/images/gallery/gallery_photo_27.jpg" title="Proin fermentum ante ut dui porttitor semper">
+                  <img class="img-thumbnail" src="dist/images/gallery/gallery_photo_27.jpg" alt="">
+                  <div class="mask"></div>
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 gallery-item">
+                <a href="dist/images/gallery/gallery_photo_28.jpg" title="Proin fermentum ante ut dui porttitor semper">
+                  <img class="img-thumbnail" src="dist/images/gallery/gallery_photo_28.jpg" alt="">
+                  <div class="mask"></div>
+                </a>
+              </div>
+            </div>
+            <!-- /Gallery Items -->
+          </div>
+        </section>
+        <!-- /Gallery Section -->
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-boxed">
+          <div class="container">
+            <div class="section-title">
+              <h2>Contact Us</h2>
+              <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id tellus pretium quam sodales luctus. Nunc nec lacus ac arcu iaculis accumsan dictum a nulla. Nullam malesuada pellentesque turpis, eu elementum risus sagittis in. Nunc
+              sit amet arcu justo.</p>
+            </div>
+
+            <div class="row">
+              <!-- Contact Form -->
+              <form id="contact-form" class="contact-form" method="post" action="https://getform.io/f/32b051ae-f4bc-431f-b941-6fa3e27fcd8b" novalidate>
+                <div class="col-md-12">
+                  <div class="messages"></div>
+                </div>
+
+                <div class="controls">
+                  <div class="col-sm-12 col-md-6">
+                    <div class="form-group">
+                      <input id="form_name" type="text" name="name" class="form-control" placeholder="Full Name" required="required" data-error="Name is required.">
+                      <i class="form-control-icon fa fa-user"></i>
+                      <div class="help-block with-errors"></div>
+                    </div>
+
+                    <div class="form-group">
+                      <input id="form_email" type="email" name="email" class="form-control" placeholder="Email Address" required="required" data-error="Valid email is required.">
+                      <i class="form-control-icon fa fa-envelope"></i>
+                      <div class="help-block with-errors"></div>
+                    </div>
+
+                    <div class="form-group">
+                      <select multiple id="form_subject" name="subject" class="form-control" required="required" data-error="Please select Subject">
+                        <option selected value="General">General</option>
+                        <option value="Gifts">Gifts</option>
+                        <option value="Covid 19">Covid 19</option>
+                        <option value="Wedding Day">Wedding Day</option>
+                        <option value="The Ceremony">The Ceremony</option>
+                      </select>
+                      <i class="form-control-icon fa fa-check-square"></i>
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 col-md-6">
+                    <div class="form-group message-group">
+                      <textarea id="form_message" name="message" class="form-control" placeholder="Leave Your Message" rows="4" required="required" data-error="Please, leave a message."></textarea>
+                      <i class="form-control-icon fa fa-comment"></i>
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 col-md-12 text-center">
+                    <input type="submit" class="button btn-send disabled" value="Submit">
+                  </div>
+                </div>
+              </form>
+              <!-- /Contact Form -->
+            </div>
+          </div>
+        </section>
+        <!-- /Contact Section -->
+
+        <!-- Footer (Thank You block) -->
+        <footer id="thanks" class="footer">
+          <div id="footer-image-block" class="footer-image-block" style="background-image: url(dist/images/footer_photo.jpg); background-attachment: fixed; background-position: 50%;" data-stellar-background-ratio="0.3">
+            <div class="footer-mask"></div>
+          </div>
+
+          <div class="footer-title">
+            <h2>Thank You!</h2>
+            <ul class="social-links">
+              <li><a class="tip social-button" href="https://www.instagram.com/explore/tags/joMarkpotkayChesca/" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+              <li><a class="tip social-button" href="https://www.facebook.com/hashtag/joMarkpotkayChesca/" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="tip social-button" href="https://twitter.com/search?q=%23joMarkpotkayChesca&src=typed_query" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+            </ul>
+            <p>#joMarkpotkayChesca</p>
+          </div>
+        </footer>
+        <!-- /Footer (Thank You block) -->
+
       </div>
-    </section>
-    <!-- Contant Us end -->
 
-    <!-- Footer start -->
-    <footer>
-      <div class="container">
-        <a href="https://github.com/marklcrns" target="_blank"><span class="fab fa-github"></span></a>
-        <a href="https://www.linkedin.com/in/marklucernas/" target="_blank"><span class="fab fa-linkedin"></span></a>
-        <a href="mailto:lucernas.mj@gmail.com" target="_blank"><span class="fas fa-envelope"></span></a>
-        <a href="https://github.com/marklcrns/marklcrns/raw/main/resources/resume_lts.pdf" target="_blank"><span class="fas fa-file-pdf"></span></a>
+    </div>
+    <!-- /Main Container -->
 
-        <small>
-          Copyright &copy; 2021 All rights reserved | Designed and Built by Mark Lucernas
-        </small>
-      </div>
-    </footer>
-    <!-- Footer end -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.js"></script>
+    <script src="dist/js/owl-carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
+    <script src="dist/js/jquery.malihu.PageScroll2id.js"></script>
+    <script src="dist/js/guidelines.js"></script>
 
-
-    <!-- Scripts -->
-    <script type="text/javascript" src="dist/guidelines.js"></script>
-    <script type="text/javascript" src="dist/maps.js"></script>
-    <script onload="mapContent();" src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.5.0/maps/maps-web.min.js" defer></script>
+    <!-- Demo Color changer Script -->
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6f4abd0efe278da3","version":"2021.12.0","r":1,"token":"94b99c0576dc45bf9d669fb5e9256829","si":100}'
+      crossorigin="anonymous"></script>
   </body>
+
 </html>
-
-

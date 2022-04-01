@@ -1,0 +1,2 @@
+var marquee=document.querySelector("#marquee"),text="t's sad to hear you're not attending :(\nThank you for responding.",textlen=text.length,i=-1,time=setInterval(myfunc,50);function myfunc(){i++,marquee.innerHTML+=text.charAt(i)}
+//# sourceMappingURL=absent.js.map

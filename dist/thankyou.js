@@ -1,2 +1,0 @@
-var marquee=document.querySelector("#marquee"),text="hank you for your RSVP.\nSee you soon!",textlen=text.length,i=-1,time=setInterval(myfunc,50);function myfunc(){i++,marquee.innerHTML+=text.charAt(i)}
-//# sourceMappingURL=thankyou.js.map

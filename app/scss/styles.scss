@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@700&family=Cormorant+Garamond&family=Pinyon+Script&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Charmonman:wght@700&family=Cormorant+Garamond&family=Pinyon+Script&display=swap");
 $base-color: #bfae9f;
 $text-color: #333;
+$link-color: #e5b88e;
 $card-width: 400px;
 $card-height: 560px;
 
@@ -8,11 +9,11 @@ $card-height: 560px;
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Charmonman', cursive;
+  font-family: "Charmonman", cursive;
 }
 
 .capital_cursive {
-  font-family: 'Pinyon Script', cursive;
+  font-family: "Pinyon Script", cursive;
   font-size: 80px;
   font-weight: normal;
 }
@@ -24,11 +25,11 @@ img {
 }
 
 .container {
-  width:  100%;
-  height:  100vh;
-  background: linear-gradient(rgba(0, 0 ,0, 0.8), rgba(0, 0 ,0, 0.5)),
-    url(images/bg.jpg) center no-repeat;
-  background-size:  cover;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+    url(../images/bg.jpg) center no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,7 +44,7 @@ img {
   color: $text-color;
 
   a {
-    color: $base-color;
+    color: $link-color;
     font-size: 22px;
   }
 
@@ -58,7 +59,7 @@ img {
   }
 
   .hashtag {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: "Cormorant Garamond", serif;
   }
 }
 
@@ -66,8 +67,8 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  background: url(images/bg_page_5.jpeg) no-repeat;
-  background-size:  cover;
+  background: url(../images/bg_page_5.jpeg) no-repeat;
+  background-size: cover;
   background-position-x: 0;
   width: 50%;
   height: 100%;
@@ -90,8 +91,8 @@ img {
   position: absolute;
   top: 0;
   right: 0;
-  background: url(images/bg_page_5.jpeg) no-repeat;
-  background-size:  cover;
+  background: url(../images/bg_page_5.jpeg) no-repeat;
+  background-size: cover;
   background-position-x: -195px;
   width: 50%;
   height: 100%;
@@ -100,7 +101,7 @@ img {
   transition: transform 1s;
   .cover_title {
     text-align: left;
-    padding-top: 200px;
+    padding-top: 180px;
   }
 }
 
@@ -114,9 +115,9 @@ img {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: url(images/bg_page_8.jpeg) no-repeat;
+  background: url(../images/bg_page_8.jpeg) no-repeat;
   background-color: #d3d3d4;
-  background-size:  cover;
+  background-size: cover;
   background-position: center;
   transform: translateZ(-100px);
   transition: z-index 0.3s step-end, transform 1s;
@@ -132,12 +133,12 @@ img {
 
 .card:hover .cover_left {
   transform: rotateY(-360deg);
-  // background: url(images/bg_card_page_1.jpg) no-repeat;
+  // background: url(../images/bg_card_page_1.jpg) no-repeat;
 }
 
 .card:hover .cover_right {
   transform: rotateY(360deg);
-  // background: url(images/bg_card_page_1.jpg) no-repeat;
+  // background: url(../images/bg_card_page_1.jpg) no-repeat;
 }
 
 .card:hover .page_1_container {
@@ -209,4 +210,3 @@ button:hover {
 }
 
 /* END:  global styles */
-

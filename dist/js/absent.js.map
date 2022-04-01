@@ -1,0 +1,1 @@
+{"version":3,"sources":["absent.js"],"names":["marquee","document","querySelector","text","textlen","length","i","time","setInterval","myfunc","innerHTML","charAt"],"mappings":"AAAA,IAAIA,QAAUC,SAASC,cAAc,YACjCC,KAAO,qEACPC,QAAUD,KAAKE,OACfC,GAAK,EACLC,KAAOC,YAAYC,OAAO,IAE9B,SAASA,SACPH,IACAN,QAAQU,WAAaP,KAAKQ,OAAOL","file":"absent.js"}
