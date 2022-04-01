@@ -803,6 +803,28 @@ ul.social-links li a:hover i {
     z-index: 0
 }
 
+#events {
+  .heart {
+    display:inline-block;
+    width: 50px; 
+    aspect-ratio: 1;
+    clip-path: polygon(-41% 0,50% 91%, 141% 0);
+  }
+
+  .nude_1 {
+    border-image: radial-gradient(#f1dcc9 69%,#0000 70%) 84.5% fill/100%;
+  }
+  .nude_2 {
+    border-image: radial-gradient(#c09175 69%,#0000 70%) 84.5% fill/100%;
+  }
+  .nude_3 {
+    border-image: radial-gradient(#bd8270 69%,#0000 70%) 84.5% fill/100%;
+  }
+  .nude_4 {
+    border-image: radial-gradient(#e7bab4 69%,#0000 70%) 84.5% fill/100%;
+  }
+}
+
 .event-block .event-title {
     display: block;
     padding: 15px 0;
@@ -875,57 +897,6 @@ ul.social-links li a:hover i {
 .event-block .event-info i {
     color: $base-color;
     margin-right: 5px
-}
-
-.gallery-item a {
-    display: block;
-    position: relative;
-    outline: none
-}
-
-.gallery-item a .mask {
-    position: absolute;
-    background: #4f565e;
-    background: rgba(53, 53, 53, .6);
-    display: inline-block;
-    font-family: pe-icon-7-stroke;
-    speak: none;
-    font-style: normal;
-    font-weight: 400;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    top: 0;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    -ms-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out
-}
-
-.gallery-item a:hover .mask {
-    visibility: visible;
-    opacity: 1
-}
-
-.gallery-item a .mask:after {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin: -33px 0 0 -33px;
-    width: 66px;
-    line-height: 66px;
-    font-size: 66px;
-    text-align: center;
-    content: "\e6bf";
-    color: #fff
 }
 
 .message-group .form-control {
@@ -1169,9 +1140,6 @@ ul.social-links li a:hover i {
     }
     .count-block .count-label {
         font-size: 11px
-    }
-    .gallery-item:last-child {
-        margin-bottom: 0
     }
 }
 
