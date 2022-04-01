@@ -145,7 +145,6 @@ a.button.small-button {
 }
 
 input[type=submit]:hover,
-button:hover,
 a.button:hover {
     color: #fff;
     background-color: $base-color;
@@ -876,10 +875,6 @@ ul.social-links li a:hover i {
 .event-block .event-info i {
     color: $base-color;
     margin-right: 5px
-}
-
-.gallery-item {
-    margin-bottom: 30px
 }
 
 .gallery-item a {

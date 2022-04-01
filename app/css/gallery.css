@@ -1,0 +1,113 @@
+.gallery-item a {
+    display: block;
+    position: relative;
+    outline: none
+}
+
+.gallery-item a .mask {
+    position: absolute;
+    background: #4f565e;
+    background: rgba(53, 53, 53, .6);
+    display: inline-block;
+    font-family: pe-icon-7-stroke;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+
+.gallery-item a:hover .mask {
+    visibility: visible;
+    opacity: 1
+}
+
+.gallery-item a .mask:after {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -33px 0 0 -33px;
+    width: 66px;
+    line-height: 66px;
+    font-size: 66px;
+    text-align: center;
+    content: "\e6bf";
+    color: #fff
+}
+
+#gallery .picture-item {
+  padding: 0;
+}
+.gallery {
+  border: none;
+  border-radius: 0;
+}
+.gallery .gallery-content {
+  position: absolute;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  opacity: 0;
+  bottom: 150px;
+}
+.gallery .gallery-overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.5s ease;
+  opacity: 0;
+  margin: 10px;
+}
+.gallery .gallery-icon {
+  opacity: 0;
+}
+.gallery .gallery-icon a {
+  font-size: 30px;
+}
+.gallery:hover .gallery-content {
+  bottom: 0;
+  opacity: 1;
+}
+.gallery:hover .gallery-overlay {
+  opacity: 1;
+}
+.gallery:hover .gallery-icon {
+  opacity: 1;
+}
+.filter-options li {
+  border: 1px solid rgba(104, 113, 121, 0.2);
+  color: #1d2636;
+}
+.filter-options .active {
+  color: #fff;
+  background-color: #ee3158;
+}
+
+
+@media (max-width:420px) {
+  .gallery-item:last-child {
+    margin-bottom: 0
+  }
+}
+
+@media (max-width: 768px) {
+  .filters-group-wrap .filters-group .filter-options .nav-link {
+    margin-top: 10px;
+  }
+}
