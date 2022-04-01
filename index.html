@@ -28,8 +28,8 @@
         <div class="page_1_container">
           <div class="page_1">
             <h1>RSVP</h1>
-            <h3>Please reply by June 10th, 2022.</h3>
-            <h3><a href="guidelines.html" target="_blank">Event Guidelines <i class="fa-solid fa-arrow-pointer"></i></a></h3>
+            <h3>Please reply by May 1st, 2022.</h3>
+            <h3 class="pulse-animate"><a href="guidelines.html" target="_blank">Event Guidelines <i class="fa-solid fa-arrow-pointer"></i></a></h3>
             <form id="sheetdb-form" method="POST" action="https://sheetdb.io/api/v1/mm0s69l4fe559">
               <fieldset class="full-width">
                 <label>Name:</label>
@@ -37,13 +37,17 @@
                 <input id="lastname" name="data[lastname]" type="text" placeholder="last" required>
               </fieldset>
               <fieldset class="checkbox">
-                <label>Attending </label>
-                <input id="attending" name="data[willattend]" type="checkbox" value="yes"/>
-                <label>Fully Vaccinated </label>
-                <input id="vaccinated" name="data[covidvaccine]" type="checkbox" value="yes"/>
+                <div>
+                  <input id="attending" name="data[willattend]" type="checkbox" value="yes"/>
+                  <label for="data[willattend]">Attending</label>
+                </div>
+                <div>
+                  <input id="vaccinated" name="data[covidvaccine]" type="checkbox" value="yes"/>
+                  <label for="data[covidvaccine]">Fully Vaccinated</label>
+                </div>
               </fieldset>
               <fieldset class="full-width">
-                <label>Phone #:</label>
+                <label for="data[contactno]">Phone #:</label>
                 <input id="phone" name="data[contactno]" type="tel" placeholder="+63" required>
               </fieldset>
               <button id="submit-btn" type="submit"><i class="fa-solid fa-paper-plane"></i></button>

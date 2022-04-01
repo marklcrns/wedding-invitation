@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Charmonman:wght@700&family=Cormorant+Garamond&family=Pinyon+Script&display=swap");
 $base-color: #bfae9f;
 $text-color: #333;
-$link-color: #e5b88e;
+$link-color: #c69d76;
 $card-width: 400px;
-$card-height: 560px;
+$card-height: 600px;
 
 /* START:  global styles */
 * {
@@ -43,6 +43,17 @@ img {
   text-align: center;
   color: $text-color;
 
+  .pulse-animate {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite
+  }
+
   a {
     color: $link-color;
     font-size: 22px;
@@ -63,6 +74,31 @@ img {
   }
 }
 
+@-webkit-keyframes pulse {
+    25% {
+        -webkit-transform: scale(1.01);
+        transform: scale(1.01)
+    }
+    75% {
+        -webkit-transform: scale(.9);
+        transform: scale(.9)
+    }
+}
+
+@keyframes pulse {
+    25% {
+        -webkit-transform: scale(1.01);
+        -ms-transform: scale(1.01);
+        transform: scale(1.01)
+    }
+    75% {
+        -webkit-transform: scale(.9);
+        -ms-transform: scale(.9);
+        transform: scale(.9)
+    }
+}
+
+
 .cover_left {
   position: absolute;
   top: 0;
@@ -77,13 +113,13 @@ img {
   transition: transform 1s;
   .cover_title {
     text-align: right;
-    padding-top: 100px;
+    padding-top: 80px;
     padding-right: 30px;
   }
   .cover_and {
     text-align: right;
     padding-right: 10px;
-    padding-bottom: 150px;
+    padding-bottom: 180px;
   }
 }
 
@@ -101,7 +137,7 @@ img {
   transition: transform 1s;
   .cover_title {
     text-align: left;
-    padding-top: 180px;
+    padding-top: 140px;
   }
 }
 
@@ -186,8 +222,8 @@ form label {
 
 .checkbox input {
   border-bottom: 2px solid rgba(0, 0, 0, 0.5);
-  height: 20px;
-  width: 20px;
+  height: 18px;
+  width: 18px;
   background-color: transparent !important;
 }
 
