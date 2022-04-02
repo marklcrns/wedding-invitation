@@ -169,12 +169,10 @@ img {
 
 .card:hover .cover_left {
   transform: rotateY(-360deg);
-  // background: url(../images/bg_card_page_1.jpg) no-repeat;
 }
 
 .card:hover .cover_right {
   transform: rotateY(360deg);
-  // background: url(../images/bg_card_page_1.jpg) no-repeat;
 }
 
 .card:hover .page_1_container {
