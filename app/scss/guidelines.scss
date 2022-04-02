@@ -452,10 +452,23 @@ textarea.form-control:focus {
     margin: 0 15% 50px
 }
 
-.section-title h2 {
+.section-title h2,
+.inner-section-title h2 {
     font-size: 40px;
     line-height: 1.2em;
     margin: 0
+}
+
+.inner-section-title {
+  text-align: center;
+  padding-top: 40px;
+  margin: 0 15% 50px
+}
+
+.inner-section-title h2 {
+  font-size: 40px;
+  line-height: 1.2em;
+  margin: 0
 }
 
 .sections {
@@ -812,16 +825,16 @@ ul.social-links li a:hover i {
   }
 
   .nude_1 {
-    border-image: radial-gradient(#f1dcc9 69%,#0000 70%) 84.5% fill/100%;
+    border-image: radial-gradient(#e7bab4 69%,#0000 70%) 84.5% fill/100%;
   }
   .nude_2 {
-    border-image: radial-gradient(#c09175 69%,#0000 70%) 84.5% fill/100%;
+    border-image: radial-gradient(#f1dcc9 69%,#0000 70%) 84.5% fill/100%;
   }
   .nude_3 {
-    border-image: radial-gradient(#bd8270 69%,#0000 70%) 84.5% fill/100%;
+    border-image: radial-gradient(#c09175 69%,#0000 70%) 84.5% fill/100%;
   }
   .nude_4 {
-    border-image: radial-gradient(#e7bab4 69%,#0000 70%) 84.5% fill/100%;
+    border-image: radial-gradient(#bd8270 69%,#0000 70%) 84.5% fill/100%;
   }
 }
 

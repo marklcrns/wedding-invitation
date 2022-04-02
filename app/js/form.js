@@ -30,18 +30,18 @@ $(function() {
             response => response.json()
         ).then((html) => {
           // you can put any JS code here
-          vaccinated = document.getElementById("vaccinated").checked
           attending = document.getElementById("attending").checked
+          vaccinated = document.getElementById("vaccinated").checked
           form.reset()
           $("#submit-btn").attr("disabled", true);
-          if (vaccinated) {
-            if (attending) {
+          if (attending) {
+            if (vaccinated) {
               window.location.replace("thankyou.html");
             } else {
-              window.location.replace("absent.html");
+              window.location.replace("unvaccinated.html");
             }
           } else {
-            window.location.replace("unvaccinated.html");
+              window.location.replace("absent.html");
           }
         });
       });
