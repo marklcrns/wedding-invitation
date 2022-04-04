@@ -1,1 +1,0 @@
-{"version":3,"sources":["email-form.js"],"names":["document","querySelector","onsubmit","e","target","submit","reset"],"mappings":"AACAA,SAASC,cAAc,QAAQC,SAAWC,IACxCA,EAAEC,OAAOC,SACTF,EAAEC,OAAOE,SACF","file":"email-form.js"}

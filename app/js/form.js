@@ -23,6 +23,7 @@ $(function() {
     submitHandler: function(form) {
       form.addEventListener("submit", e => {
         e.preventDefault();
+        $("#submit-btn").attr("disabled", true);
         fetch(form.action, {
             method : "POST",
             body: new FormData(document.getElementById("sheetdb-form")),
@@ -33,7 +34,6 @@ $(function() {
           attending = document.getElementById("attending").checked
           vaccinated = document.getElementById("vaccinated").checked
           form.reset()
-          $("#submit-btn").attr("disabled", true);
           if (attending) {
             if (vaccinated) {
               window.location.replace("thankyou.html");
@@ -43,6 +43,10 @@ $(function() {
           } else {
               window.location.replace("absent.html");
           }
+          alert('Submission success. Click to proceed.')
+        }).catch((e) => {
+          alert('Submission failed!')
+          window.location.replace("error.html");
         });
       });
     }

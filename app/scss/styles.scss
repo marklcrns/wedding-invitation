@@ -57,6 +57,7 @@ img {
   a {
     color: $link-color;
     font-size: 22px;
+
   }
 
   a:link,
@@ -71,6 +72,24 @@ img {
 
   .hashtag {
     font-family: "Cormorant Garamond", serif;
+  }
+
+}
+
+.backup-link {
+  position: absolute;
+  z-index: 999;
+  bottom: 0;
+  font-size: 20px;
+
+  a {
+    font-family: "Cormorant Garamond", serif;
+    color: $base-color;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    text-decoration: none;
   }
 }
 

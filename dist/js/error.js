@@ -1,0 +1,2 @@
+var marquee=document.querySelector("#marquee"),text="n error in RSVP submission has occurred.\n\nPlease contact the coordinators.\n\nSorry for the inconvenience.",textlen=text.length,i=-1,time=setInterval(myfunc,50);function myfunc(){i++,marquee.innerHTML+=text.charAt(i)}
+//# sourceMappingURL=error.js.map
