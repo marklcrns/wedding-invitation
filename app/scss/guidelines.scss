@@ -115,6 +115,7 @@ img {
 
 blockquote {
   font-family: 'Special Elite', cursive;
+  font-size: 0.9rem;
   font-weight: 100;
   line-height: 1.4;
   position: relative;
@@ -126,27 +127,28 @@ blockquote {
 blockquote:before,
 blockquote:after {
   position: absolute;
-  color: #f1efe6;
-  font-size: 3rem;
+  font-size: 2rem;
+  color: $base-color;
   width: 4rem;
   height: 4rem;
 }
 
 blockquote:before {
   content: '“';
-  left: -2.3rem;
+  left: -2.1rem;
   top: -1rem;
 }
 
 blockquote:after {
   content: '”';
-  right: -2.3rem;
+  right: -2.1rem;
 }
 
 cite {
   font-family: 'Special Elite', cursive;
   line-height: 3;
   text-align: left;
+  font-size: 1rem;
 }
 
 input[type=submit],
