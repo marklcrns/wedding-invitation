@@ -115,7 +115,7 @@ img {
 
 blockquote {
   font-family: 'Special Elite', cursive;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 100;
   line-height: 1.4;
   position: relative;
@@ -128,7 +128,7 @@ blockquote:before,
 blockquote:after {
   position: absolute;
   font-size: 2rem;
-  color: $base-color;
+  color: #dfded5;
   width: 4rem;
   height: 4rem;
 }
