@@ -1,0 +1,29 @@
+$card-height: 800px;
+$card-width: 600px;
+
+.card {
+  width: $card-width;
+  height: $card-height;
+  .page_1 {
+    table {
+      margin: 0 auto;
+    }
+    td {
+      padding: 0 20px;
+    }
+
+    th {
+      padding: 0 20px;
+      font-size: 1.4em;
+    }
+
+    .entourage {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .events {
+      padding-top: 10px;
+    }
+  }
+}
